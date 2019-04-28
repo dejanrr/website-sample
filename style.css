@@ -1,0 +1,1201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    background-color: #fff;
+    text-rendering: optimizeLegibility;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    height: 100%;
+}
+
+.logo-photo-studio {
+    color: #000;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 4%;
+    letter-spacing: 2px;
+}
+
+nav {
+    width: 100%;
+    text-align: center;
+    display: block;
+    padding-bottom: 3%;
+    z-index: 9;
+}
+
+nav a {
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #3b3940;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 5%;
+}
+
+nav a:hover {
+    color: #f0a951;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    color: #3b3940;
+    padding: 2%;
+    border-radius: 2px;
+    box-shadow: 0px 1px 10px #999;
+}
+
+.orange-color {
+    color: #f0a951;
+}
+
+.grey-color {
+    color: #3b3940;
+}
+
+.main-brand-photo {
+    background-image: url(resources/img/main.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 70vh;
+}
+
+.main-brand-caption {
+    position: absolute;
+    color: #fff;
+    font-size: 150px;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 10px;
+}
+
+.portfolio-caption {
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 5%;
+    letter-spacing: 2px;
+}
+
+.grid-item img {
+    max-width: 100%;
+    padding-left: 20%;
+}
+
+.who-we-are-section {
+    background-color: #f6f6f8;
+}
+
+.who-we-are-caption {
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 5%;
+    letter-spacing: 2px;
+}
+
+.who-we-are-description {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    padding-top: 5%;
+    width: 65%;
+    margin: auto;
+    text-align: center;
+}
+
+.awards-section {
+    text-align: center;
+    margin: auto;
+}
+
+.awards-section div{
+    display: inline-block;
+    padding: 5% 6% 3% 5%;
+    font-size: 18px;
+}
+
+.awards-section i {
+    font-size: 45px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.awards-section span {
+    font-size: 45px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.learn-more-btn button {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 200px;
+    border-radius: 300px;
+    border-color: #f0a951;
+    border-style: solid;
+    background-color: #fff;
+    color: #f0a951;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    padding: 7px 27px;
+    cursor: pointer;
+}
+
+.learn-more-btn button p{
+    padding: 5%;
+}
+
+.learn-more-btn {
+    padding-bottom: 5%;
+}
+
+.learn-more-btn button:hover {
+    color: #fff;
+    background-color: #f0a951;
+}
+
+.our-services-section {
+    width: 100%;
+    height: 65%;
+    padding-top: 5%;
+}
+
+.our-services-section-left-side {
+    float: left;
+    width: 50%;
+}
+
+.our-services-section-right-side {
+    float: right;
+    width: 50%;
+}
+
+.our-services-section-right-side img {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+.our-services-section-caption {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    margin: auto;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-top: 5%;
+}
+
+.our-services-section-description {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin: auto;
+    text-align: center;
+    width: 90%;
+}
+
+.get-in-touch-section {
+    width: 100%;
+    background-color: #f6f6f8;
+    padding-top: 5%;
+}
+
+.get-in-touch-section-caption {
+    text-align: center;
+    margin: auto;
+    font-size: 35px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.get-in-touch-section-description {
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-align: center;
+    margin: auto;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    padding-top: 5%;
+    width: 65%;
+}
+
+.get-in-touch-section-images {
+    text-align: center;
+    padding: 5%;
+    letter-spacing: 50px;
+}
+
+.get-in-touch-section-images img {
+    display: inline;
+    border-radius: 50%;
+    opacity: 0.9;
+}
+
+footer {
+    bottom: 0;
+    background-color: #333;
+    width: 100%;
+    height: 50%;
+    display: inline-block;
+}
+
+footer div {
+    display: inline-block;
+}
+
+footer ul {
+    display: inline;
+    list-style: none;
+    color: #fff;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 17px;
+    color: #888;
+}
+
+.footer-logo {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    padding-top: 5%;
+    padding-left: 10%;
+    vertical-align: top;
+}
+
+.footer-nav {
+    margin-left: 5%;
+    padding-top: 5%;
+    line-height: 2;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #888;
+}
+
+.footer-nav a:hover {
+    color: #fff;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.newsletter {
+    margin-left: 5%;
+    padding-top: 5%;
+    line-height: 2;
+    vertical-align: top;
+}
+
+.newsletter div {
+    display: inline;
+}
+
+.newsletter-text {
+    padding-top: 7%;
+    width: 60%;
+    line-height: 1.2;
+}
+
+.newsletter-textbox input {
+    padding: 5px 10px;
+    border: 1px solid #c5c6cd;
+    transition: .3s ease-in-out;
+    border-radius: 6px;
+    width: 55%;
+    display: inline-block;
+    font-size: 16px;
+    background-color: #fff;
+    color: #3b3940;
+}
+
+.newsletter-textbox {
+    padding-top: 2%;
+}
+
+.social-links {
+    float: right;
+    margin-right: 10%;
+    padding-top: 5%;
+    width: 10%;
+}
+
+.social-links li {
+    display: inline-block;
+    font-size: 25px;
+    padding-left: 5%;
+}
+
+.social-links li:hover {
+    color: #fff;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.about-us {
+    width: 40%;
+}
+
+.services-page-main-photo {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url(resources/img/tom-pumford-342672-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 40vh;
+}
+
+.services-page-captions {
+    width: 20%;
+    position: relative;
+    top: 35%;
+    left: 5%;
+    color: #fff;
+}
+
+.services-page-main-caption {
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.services-page-second-caption {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding-top: 5%;
+}
+
+.services-page-second-caption i {
+    font-size: 10px;
+}
+
+.services-page-main-section-caption {
+    font-size: 40px;
+    text-align: center;
+    padding-top: 10%;
+    font-weight: 500;
+}
+
+.services-page-main-section-description {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    padding-top: 3%;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.newcolor {
+    color: #5f5f61;
+}
+
+.services-page-our-services {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 5%;
+    color: #5f5f61;
+}
+
+.services-page-our-services div {
+    width: 25%;
+    display: inline-block;
+    margin: auto;
+    text-align: left;
+    padding-right: 3%;
+    padding-left: 3%;
+}
+
+.services-page-our-services i {
+    color: #f0a951;
+    font-size: 40px;
+}
+
+.spos-caption-one {
+    white-space: nowrap;
+    font-size: 20px;
+    padding-top: 5%;
+}
+
+.spos-caption-two {
+    font-size: 14px;
+    padding-top: 5%;
+}
+
+.second-service-padding {
+    padding-bottom: 5%;
+}
+
+.about-page-main-photo {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url(resources/img/toddd.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 40vh;
+}
+
+.about-page-captions {
+    width: 20%;
+    position: relative;
+    top: 35%;
+    left: 5%;
+    color: #fff;
+}
+
+.about-page-main-caption {
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.about-page-second-caption {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding-top: 5%;
+}
+
+.pricing-section {
+    font-family: 'Montserrat', sans-serif;
+    color: #5f5f61;
+    text-align: center;
+    font-size: 16px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 40px 10px;
+    margin: auto;
+    padding-top: 5%;
+    padding-bottom: 40%;
+}
+
+.pricing-section .plan {
+    margin: auto;
+    width: 25%;
+    float: left;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.pricing-section * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.pricing-section header {
+    position: inherit;
+}
+
+.pricing-section .plan-title {
+    font-family: 'IBM Plex Sans', sans-serif;
+    top: 0;
+    font-weight: 400;
+    padding: 5px 15px;
+    margin: 0 auto;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin: 0;
+    display: inline-block;
+    background-color: #f0a951;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.pricing-section .plan-cost {
+    padding: 0px 10px 20px;
+}
+
+.pricing-section .plan-price {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 500;
+    font-size: 2em;
+    color: #f0a951;
+}
+
+.pricing-section .plan-type {
+    opacity: 0.6;
+}
+
+.pricing-section .plan-features {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    list-style: outside none none;
+    font-size: 0.8em;
+}
+
+.pricing-section .plan-features li {
+    padding: 10px 5%;
+}
+
+.pricing-section .plan-features i {
+    margin-right: 8px;
+    opacity: 0.4;
+}
+
+.pricing-section .plan-select {
+    padding: 10px 10px 0;
+}
+
+.pricing-section .plan-select a {
+    font-family: 'IBM Plex Sans', sans-serif;
+    background-color: #f0a951;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    -webkit-transform: translateY(50%);
+    transform: translateY(50%);
+    font-weight: 400;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.pricing-section .plan-select a:hover {
+    background-color: #efc591;
+}
+
+@media only screen and (max-width: 767px) {
+    .pricing-section .plan {
+        width: 50%;
+    }
+    
+    .pricing-section .plan-title,
+    .pricing-section .plan-select a {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+  
+    .pricing-section .plan-cost,
+    .pricing-section .featured .plan-cost {
+        padding: 20px 10px 20px;
+    }
+    .pricing-section .plan-select,
+    .pricing-section .featured .plan-select {
+        padding: 10px 10px 10px;
+    }
+    .pricing-section .featured {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .pricing-section .plan {
+        width: 100%;
+    }
+}
+
+.contact-page-main-photo {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url(resources/img/christopher-gower-291240-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 40vh;
+}
+
+.contact-page-captions {
+    width: 20%;
+    position: relative;
+    top: 35%;
+    left: 5%;
+    color: #fff;
+}
+
+.contact-page-main-caption {
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.contact-page-second-caption {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding-top: 5%;
+}
+
+.contact-page-main-section {
+    height: 100%;
+    padding-bottom: 50%;
+}
+
+.contact-page-second-caption i {
+    font-size: 10px;
+}
+
+.contact-page-left-side {
+    width: 50%;
+    float: left;
+}
+
+.contact-page-right-side {
+    height: 750px;
+    width: 50%;
+    float: right;
+    background-color: #f6f6f8;
+}
+
+.information-section {
+    display: inline-block;
+    width: 100%;
+    padding-top: 10%;
+}
+
+.information-section div{
+    font-size: 16px;
+    display: inline-block;
+    margin: auto;
+    width: 45%;
+}
+
+.phone {
+    width: 45%;
+    text-align: center;
+    margin: auto;
+    border-right: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.email {
+    width: 45%;
+    text-align: center;
+}
+
+.phone i{
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 3%;
+}
+
+.email i{
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 3%;
+}
+
+.phone p{
+    letter-spacing: 2px;
+}
+
+.map-section {
+    text-align: center;
+    padding-top: 10%;
+}
+
+.textbox-section-one div{
+    display: inline-block;
+    width: 45%;
+}
+
+input {
+    padding: 11px 19px;
+    border: 1px solid #c5c6cd;
+    transition: .3s ease-in-out;
+    border-radius: 6px;
+    width: 100%;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #fff;
+    color: #3b3940;
+}
+
+.textbox-section-one {
+    padding-top: 10%;
+}
+
+.textbox-section-one-right {
+    float: right;
+}
+
+.contact-page-right-side-content {
+    width: 87%;
+    margin: auto;
+}
+
+.textbox-section-two div{
+    display: inline-block;
+    width: 45%;
+}
+
+.textbox-section-two {
+    padding-top: 5%;
+}
+
+.textbox-section-two-right {
+    float: right;
+}
+
+.cprs-main-caption {
+    text-align: left;
+    font-size: 35px;
+    font-weight: 500;
+    padding-top: 10%;
+}
+
+.cprs-main-description {
+    text-align: left;
+    font-size: 16px;
+    padding-top: 3%;
+}
+
+.message-textbox {
+    padding-top: 5%;
+}
+
+.message-textbox input{
+    padding: 10px 19px;
+    border: 1px solid #c5c6cd;
+    transition: .3s ease-in-out;
+    border-radius: 6px;
+    width: 100%;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #fff;
+    color: #000;
+    height: 200px;
+}
+
+.send-btn button{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 170px;
+    border-radius: 10px;
+    border-color: #f0a951;
+    border-style: solid;
+    background-color: #fff;
+    color: #f0a951;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+.send-btn {
+    float: left;
+    padding-top: 5%;
+}
+
+.send-btn button:hover {
+    color: #fff;
+    background-color: #f0a951;
+}
+
+.container {
+    width: 65%;
+    margin: 2rem auto;
+    padding-top: 2%;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 1.5rem;
+    padding-bottom: 10%;
+}
+
+.gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; 
+}
+
+.gallery__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+
+.gallery__item--2 {
+    grid-column-start: 3;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 9;
+}
+
+.gallery__item--3 {
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+
+.gallery__item--4 {
+    
+}
+
+.gallery__item--5 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 9;
+}
+
+.gallery__item--6 {
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 6;
+    grid-row-end: 9;
+}
+
+.portfolio-page-main-photo {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)), url(resources/img/allef-vinicius-ig-seteales-244389-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 40vh;
+}
+
+.portfolio-page-captions {
+    width: 20%;
+    position: relative;
+    top: 35%;
+    left: 5%;
+    color: #fff;
+}
+
+.portfolio-page-main-caption {
+    font-size: 50px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.portfolio-page-second-caption {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding-top: 5%;
+}
+
+.portfolio-page-main-section {
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.porfolio-page-second-caption i {
+    font-size: 10px;
+}
+
+.portfolio-container {
+    width: 80%;
+    margin: 2rem auto;
+}
+
+.portfolio-gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 1.5rem; 
+}
+
+.portfolio-gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; 
+}
+
+.portfolio-gallery__item--1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.portfolio-gallery__item--2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.portfolio-gallery__item--3 {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.portfolio-gallery__item--4 {
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.portfolio-gallery__item--5 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.portfolio-gallery__item--6 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.portfolio-gallery__item--7 {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.portfolio-gallery__item--8 {
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.portfolio-gallery__item--9 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 7;
+}
+
+.portfolio-gallery__item--10 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 7;
+}
+
+.portfolio-gallery__item--11 {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 5;
+    grid-row-end: 7;
+}
+
+.portfolio-gallery__item--12 {
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 5;
+    grid-row-end: 7;
+}
+
+.portfolio-gallery__item--13 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 9;
+}
+
+.portfolio-gallery__item--14 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 7;
+    grid-row-end: 9;
+}
+
+.portfolio-gallery__item--15 {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 7;
+    grid-row-end: 9;
+}
+
+.portfolio-gallery__item--16 {
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 7;
+    grid-row-end: 9;
+}
+
+.photographers-section {
+    width: 100%;
+    padding-top: 5%;
+    display: inline-block;
+}
+
+.photographers-left-side {
+    width: 50%;
+    float: left;
+}
+
+.photographers-right-side {
+    width: 50%;
+    float: right;
+}
+
+.photographers-left-side img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    opacity: 0.8;
+    border-radius: 50%;
+}
+
+.photographer-skills {
+    padding-top: 10%;
+    color: #3b3940;
+}
+
+.photographer-skills div {
+    padding-top: 1%;
+}
+
+.first-skill {
+    width: 90%;
+    border-bottom: 1.5px solid #f0a951;
+    line-height: 2;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.second-skill {
+    width: 82%;
+    border-bottom: 1.5px solid #f0a951;
+    line-height: 2;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.third-skill {
+    width: 87%;
+    border-bottom: 1.5px solid #f0a951;
+    line-height: 2;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.second-photographer-first-skill {
+    width: 93%;
+    border-bottom: 1.5px solid #f0a951;
+    line-height: 2;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.second-photographer-second-skill {
+    width: 86%;
+    border-bottom: 1.5px solid #f0a951;
+    line-height: 2;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.second-photographer-third-skill {
+    width: 81%;
+    border-bottom: 1.5px solid #f0a951;
+    line-height: 2;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.third-photographer-first-skill {
+    width: 83%;
+    border-bottom: 1.5px solid #f0a951;
+    line-height: 2;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.third-photographer-second-skill {
+    width: 78%;
+    border-bottom: 1.5px solid #f0a951;
+    line-height: 2;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.third-photographer-third-skill {
+    width: 87%;
+    border-bottom: 1.5px solid #f0a951;
+    line-height: 2;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.last-photographer-section {
+    padding-bottom: 10%;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 9999;
+    width: 45px;
+    height: 45px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+    background: #f0a951;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: opacity 0.2s ease-out;
+    opacity: 0;
+}
+
+#back-to-top:hover {
+    background: #f4b970;
+}
+
+#back-to-top.show {
+    opacity: 1;
+}
+
+#back-to-top i{
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 3;
+}
+
+@media only screen and (min-width: 1367px) {
+    .our-services-section-right-side img {
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+        width: 600px;
+    }
+    
+    .photographer-skills {
+        padding-top: 5%;
+    }    
+}
